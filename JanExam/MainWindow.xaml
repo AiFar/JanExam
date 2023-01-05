@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800"
         Loaded="Window_Loaded">
     <Grid>
-        <ListBox x:Name="lbxTeams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="21,121,505,81"/>
+        <ListBox x:Name="lbxTeams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="21,121,505,81" SelectionChanged="lbxTeams_SelectionChanged"/>
         <ListBox x:Name="lbxPlayers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="334,121,172,81"/>
         <Button x:Name="btnDraw" Content="Draw" HorizontalAlignment="Left" Margin="706,349,0,0" VerticalAlignment="Top" Height="21" Width="57"/>
         <Button x:Name="btnLoss" Content="Loss" HorizontalAlignment="Left" Margin="706,305,0,0" VerticalAlignment="Top" Height="24" Width="53"/>

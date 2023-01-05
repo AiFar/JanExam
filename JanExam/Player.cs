@@ -9,8 +9,8 @@ namespace JanExam
     internal class Player
     {
         #region properties
-        public string Name { get; private set; }
-        public string ResultRecord { get; private set; }
+        public string Name { get;  set; }
+        public string ResultRecord { get;  set; }
 
         #endregion properties
 
