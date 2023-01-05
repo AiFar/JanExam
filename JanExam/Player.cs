@@ -15,7 +15,7 @@ namespace JanExam
         #endregion properties
 
         #region constructor
-        public Player (string name, string resultRecord)
+        public Player (string name, string resultRecord, int points)
         {
             Name = name;
             ResultRecord = resultRecord;
@@ -27,6 +27,6 @@ namespace JanExam
 
         }
         #endregion constructor
-        //public Player(string name, string resultRecord) : this(name, resultRecord) { }
+        
     }
 }

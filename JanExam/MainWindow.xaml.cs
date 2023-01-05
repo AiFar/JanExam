@@ -35,11 +35,11 @@ namespace JanExam
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Team = GetTeams();
+            Team = CreateTeams();
 
         }
 
-        public static List<Team> GetTeams()
+        public static List<Team> CreateTeams()
         {
             Team t1 = new Team() { Name = "France" };
             Team t2 = new Team() { Name = "Italy" };
@@ -80,6 +80,31 @@ namespace JanExam
             {
                 lbxTeams.ItemsSource = selected.team;
             }
+
+        }
+
+        private void btnWin_Click(object sender, RoutedEventArgs e)
+        {
+            int points = 0;
+            if (int.TryParse(lbxTeams.TextInput, out Teams))
+            {
+                Team seleceted = lbxTeams.SelectedItem as Team;
+
+
+                if (seleceted != null)
+                {
+                    seleceted.Teams(Win);
+                }
+            }
+        }
+
+        private void btnLoss_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDraw_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }

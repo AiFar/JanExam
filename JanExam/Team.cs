@@ -32,4 +32,20 @@ namespace JanExam
 
         #endregion constructor
     }
+
+    public class Teams : IComparable
+    {
+        int points = 0;
+        public int CompareTo(object? obj)
+        {
+            throw new NotImplementedException();
+
+            if (points == null)
+            {
+
+            }
+
+           
+        }
+    }
 }

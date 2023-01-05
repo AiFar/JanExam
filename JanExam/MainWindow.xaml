@@ -10,9 +10,9 @@
     <Grid>
         <ListBox x:Name="lbxTeams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="21,121,505,81" SelectionChanged="lbxTeams_SelectionChanged"/>
         <ListBox x:Name="lbxPlayers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="334,121,172,81"/>
-        <Button x:Name="btnDraw" Content="Draw" HorizontalAlignment="Left" Margin="706,349,0,0" VerticalAlignment="Top" Height="21" Width="57"/>
-        <Button x:Name="btnLoss" Content="Loss" HorizontalAlignment="Left" Margin="706,305,0,0" VerticalAlignment="Top" Height="24" Width="53"/>
-        <Button x:Name="btnWin" Content="Win" HorizontalAlignment="Left" Margin="706,260,0,0" VerticalAlignment="Top" Height="25" Width="48"/>
+        <Button x:Name="btnDraw" Content="Draw" HorizontalAlignment="Left" Margin="706,349,0,0" VerticalAlignment="Top" Height="21" Width="57" Click="btnDraw_Click"/>
+        <Button x:Name="btnLoss" Content="Loss" HorizontalAlignment="Left" Margin="706,305,0,0" VerticalAlignment="Top" Height="24" Width="53" Click="btnLoss_Click"/>
+        <Button x:Name="btnWin" Content="Win" HorizontalAlignment="Left" Margin="706,260,0,0" VerticalAlignment="Top" Height="25" Width="48" Click="btnWin_Click"/>
         <Label Content="Record Result" HorizontalAlignment="Left" Margin="689,211,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Teams" Content="Teams" HorizontalAlignment="Left" Margin="21,81,0,0" VerticalAlignment="Top"/>
         <Label Content="Players" HorizontalAlignment="Left" Margin="334,81,0,0" VerticalAlignment="Top"/>
