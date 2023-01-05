@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JanExam"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded">
     <Grid>
         <ListBox x:Name="lbxTeams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="21,121,505,81"/>
         <ListBox x:Name="lbxPlayers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="334,121,172,81"/>
