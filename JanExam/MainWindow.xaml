@@ -6,5 +6,16 @@
         xmlns:local="clr-namespace:JanExam"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid/>
+    <Grid>
+        <ListBox x:Name="lbxTeams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="21,121,505,81"/>
+        <ListBox x:Name="lbxPlayers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="334,121,172,81"/>
+        <Button x:Name="btnDraw" Content="Draw" HorizontalAlignment="Left" Margin="706,349,0,0" VerticalAlignment="Top" Height="21" Width="57"/>
+        <Button x:Name="btnLoss" Content="Loss" HorizontalAlignment="Left" Margin="706,305,0,0" VerticalAlignment="Top" Height="24" Width="53"/>
+        <Button x:Name="btnWin" Content="Win" HorizontalAlignment="Left" Margin="706,260,0,0" VerticalAlignment="Top" Height="25" Width="48"/>
+        <Label Content="Record Result" HorizontalAlignment="Left" Margin="689,211,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Teams" Content="Teams" HorizontalAlignment="Left" Margin="21,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="Players" HorizontalAlignment="Left" Margin="334,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="Player Rating" HorizontalAlignment="Left" Margin="681,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tiddlywinks World Cup" HorizontalAlignment="Left" Margin="256,21,0,0" VerticalAlignment="Top" FontSize="24"/>
+    </Grid>
 </Window>
