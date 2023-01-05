@@ -33,19 +33,20 @@ namespace JanExam
         #endregion constructor
     }
 
-    public class Teams : IComparable
-    {
-        int points = 0;
-        public int CompareTo(object? obj)
+    public class Teams : IComparable <Teams>
+    { 
+        public string Name { get; set; }
+
+        public int points { get; set; }
+
+
+        public int CompareTo(Teams? other)
         {
             throw new NotImplementedException();
 
-            if (points == null)
-            {
-
-            }
-
-           
+            if (this.points < other.points) return 1;
+            else if (this.points > other.points) return -1;
+            else return 0;
         }
     }
 }
